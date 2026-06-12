@@ -46,8 +46,29 @@
 // }
 
 // Concept: final
-void main() {
-  final university = "Independent University ,Bangladesh";
+// void main() {
+//   final university = "Independent University ,Bangladesh";
 
-  print(university);
+//   print(university);
+// }
+
+// Taking Input from the User
+
+import 'dart:io';
+void main(){
+  print("Enter your name: ");
+  String? name=stdin.readLineSync();
+  print("Enter your University: ");
+  String? university=stdin.readLineSync();
+  print("Enter your Department: ");
+  String? department=stdin.readLineSync();
+  print("Enter your Semester: ");
+  String? semester=stdin.readLineSync();
+  
+  print("Hello $name");
+  print("You study at $university");
+  print("Department: $department");
+  print("Semester: $semester");
+
+  
 }
