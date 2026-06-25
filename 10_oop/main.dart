@@ -34,20 +34,41 @@
 // }
 
 
-class Student {
-  String name;
-  int age;
+// class Student {
+//   String name;
+//   int age;
 
-  Student(this.name, this.age);
+//   Student(this.name, this.age);
 
-  void introduce() {
-    print("My name is $name");
-    print("I am $age years old");
-  }
+//   void introduce() {
+//     print("My name is $name");
+//     print("I am $age years old");
+//   }
+// }
+
+// void main() {
+//   Student student1 = Student("Mahia", 22);
+
+//   student1.introduce();
+// }
+
+
+class Course {
+  String code;
+  String title;
+  int credit;
+
+  Course(this.code, this.title, this.credit);
 }
 
 void main() {
-  Student student1 = Student("Mahia", 22);
+  Course course1 = Course(
+    "CSE309",
+    "Web Application Development",
+    3,
+  );
 
-  student1.introduce();
+  print("Code: ${course1.code}");
+  print("Title: ${course1.title}");
+  print("Credit: ${course1.credit}");
 }
